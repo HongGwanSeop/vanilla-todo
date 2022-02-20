@@ -1,0 +1,116 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    min-height: 100%;
+    width: 100%;
+ }
+
+
+.hidden{
+    display:none;
+}
+*{
+    color: white;
+}
+
+.main-content{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr minmax(50px, 1fr) 1fr;
+    grid-template-rows: 80px 1fr 60px;
+    align-content: space-between;
+
+}
+
+#myform{
+    align-self: center;
+}
+
+#clock{
+    grid-column:2/3;
+    grid-row:1/2;
+    
+    text-align:center;
+    
+}
+
+
+#weather{
+    grid-column: 3/4;
+    grid-row:1/2;
+    align-self: center;
+    text-align: right;
+    padding-right: 40px;
+}
+
+button{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
+button:hover{
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+input{
+    color: white;
+    background-color: rgba(255,255,255,0);
+    margin:0;
+    border: solid white;
+    border-width: 0 0 2.5px 0;
+    font-size: x-large;
+
+}
+
+
+input::placeholder{
+    color:white;
+}
+
+input:focus{
+    outline: none;
+}
+
+#todo-form input{
+    width:323px;
+}
+
+
+.todo-container{
+    margin-top: 80px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+
+}
+
+#login-form{
+    font-size: xx-large;
+}
+
+
+#todo-list{
+    font-size: 1.5em;
+    margin:0;
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style-type: none;
+    
+}
+
+
+#quote{
+    grid-row: 3/4;
+    grid-column: 1/4;
+    text-align: center;
+
+    display:grid;
+    grid-auto-rows:1fr 1fr;
+}
